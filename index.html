@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17 | Search Button </title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <div class="my-header"><h3>SAVING DETAILS IN LOCAL STORAGE AND PRINTING DOM</h3></div>
+    <button onclick="displayDiv()" class="initial-add-btn">+ Add New User</button> </br>
+    <div class="search-div">
+        <input type="text" name="searchParam" id="searchParam" placeholder="Enter the search name">
+        <button onclick="searchSingle()">Search Single</button>
+        <button onclick="searchAll()">Search All</button>
+        <button onclick="findContaining()">Find containing</button>
+    </div>
+    <div id="add-user">
+        <div class="add-user-form">
+        <input type="hidden" id="index">
+        <input type="text" placeholder="Enter your Full Name" id="fullName">
+        <input type="text" placeholder="Enter Email Address" id="email">
+        <input type="text" placeholder="Enter your Phone Number" id="phone">
+        <label for="">Input 1.png for male avatar or 2.png for female avatar</label>
+        <input type="text" placeholder="Enter your image" id="image">
+        <div class="btn-holder">
+            <button onclick="updateUser()" id="updateButton" >Update</button>
+            <button onclick="addUser()" id="addButton" >Add User</button>
+            <button onclick="removeDiv()" >Cancel</button>
+        </div>
+    </div>
+    </div>
+
+    <div id="userDetails"></div>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
